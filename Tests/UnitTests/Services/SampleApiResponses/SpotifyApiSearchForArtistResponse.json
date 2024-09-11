@@ -1,0 +1,45 @@
+﻿{
+  "artists": {
+    "href": "https://api.spotify.com/v1/search?query=Holding+Absence&type=artist&locale=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&offset=0&limit=1",
+    "limit": 1,
+    "next": "https://api.spotify.com/v1/search?query=Holding+Absence&type=artist&locale=en-GB%2Cen-US%3Bq%3D0.9%2Cen%3Bq%3D0.8&offset=1&limit=1",
+    "offset": 0,
+    "previous": null,
+    "total": 800,
+    "items": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2tl280wIokrLjabzrSKTgU"
+        },
+        "followers": {
+          "href": null,
+          "total": 144362
+        },
+        "genres": [ "metalcore", "uk pop punk" ],
+        "href": "https://api.spotify.com/v1/artists/2tl280wIokrLjabzrSKTgU",
+        "id": "2tl280wIokrLjabzrSKTgU",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab6761610000e5eb91ee60fcf3a9af13bd7039a2",
+            "height": 640,
+            "width": 640
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6761610000517491ee60fcf3a9af13bd7039a2",
+            "height": 320,
+            "width": 320
+          },
+          {
+            "url": "https://i.scdn.co/image/ab6761610000f17891ee60fcf3a9af13bd7039a2",
+            "height": 160,
+            "width": 160
+          }
+        ],
+        "name": "Holding Absence",
+        "popularity": 57,
+        "type": "artist",
+        "uri": "spotify:artist:2tl280wIokrLjabzrSKTgU"
+      }
+    ]
+  }
+}

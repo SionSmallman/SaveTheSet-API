@@ -1,0 +1,127 @@
+{
+  "id": "43ab83cb",
+  "versionId": "g23ad4447",
+  "eventDate": "01-09-2024",
+  "lastUpdated": "2024-09-02T04:41:25.893+0000",
+  "artist": {
+    "mbid": "ca891d65-d9b0-4258-89f7-e6ba29d83767",
+    "name": "Iron Maiden",
+    "sortName": "Iron Maiden",
+    "disambiguation": "English heavy metal band",
+    "url": "https://www.setlist.fm/setlists/iron-maiden-3bd6803c.html"
+  },
+  "venue": {
+    "id": "3d20d13",
+    "name": "RAC Arena",
+    "city": {
+      "id": "2063523",
+      "name": "Perth",
+      "state": "Western Australia",
+      "stateCode": "WA",
+      "coords": {
+        "lat": -31.9333333,
+        "long": 115.8333333
+      },
+      "country": {
+        "code": "AU",
+        "name": "Australia"
+      }
+    },
+    "url": "https://www.setlist.fm/venue/rac-arena-perth-australia-3d20d13.html"
+  },
+  "tour": {
+    "name": "The Future Past"
+  },
+  "sets": {
+    "set": [
+      {
+        "song": [
+          {
+            "name": "Doctor Doctor",
+            "tape": true,
+            "cover": {
+              "mbid": "c0bf9e20-2872-4897-ad1f-0882b83272a0",
+              "name": "UFO",
+              "sortName": "UFO",
+              "disambiguation": "British space rock/hard rock band",
+              "url": "https://www.setlist.fm/setlists/ufo-23d6acff.html"
+            }
+          },
+          {
+            "name": "Blade Runner (End Titles)",
+            "tape": true,
+            "cover": {
+              "mbid": "57fca0e2-f9ad-4ae6-af9d-6a6f50cbcd5f",
+              "name": "Vangelis",
+              "sortName": "Vangelis",
+              "disambiguation": "Greek composer of electronic, new age and classical",
+              "url": "https://www.setlist.fm/setlists/vangelis-2bd6a8ae.html"
+            }
+          },
+          {
+            "name": "Caught Somewhere in Time"
+          },
+          {
+            "name": "Stranger in a Strange Land"
+          },
+          {
+            "name": "The Writing on the Wall"
+          },
+          {
+            "name": "Days of Future Past"
+          },
+          {
+            "name": "The Time Machine"
+          },
+          {
+            "name": "The Prisoner"
+          },
+          {
+            "name": "Death of the Celts"
+          },
+          {
+            "name": "Can I Play With Madness"
+          },
+          {
+            "name": "Heaven Can Wait"
+          },
+          {
+            "name": "Alexander the Great"
+          },
+          {
+            "name": "Fear of the Dark"
+          },
+          {
+            "name": "Iron Maiden"
+          }
+        ]
+      },
+      {
+        "encore": 1,
+        "song": [
+          {
+            "name": "Hell on Earth"
+          },
+          {
+            "name": "The Trooper"
+          },
+          {
+            "name": "Wasted Years"
+          },
+          {
+            "name": "Always Look on the Bright Side of Life",
+            "tape": true,
+            "cover": {
+              "mbid": "4a5c8526-f8ec-43f1-97af-49722ad88394",
+              "name": "Monty Python",
+              "sortName": "Monty Python",
+              "disambiguation": "British surreal comedy group",
+              "url": "https://www.setlist.fm/setlists/monty-python-13d6c1c9.html"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "url": "https://www.setlist.fm/setlist/iron-maiden/2024/rac-arena-perth-australia-43ab83cb.html"
+}
