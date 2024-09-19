@@ -17,7 +17,7 @@ The backend API of Save The Set, a web application for quickly and easily conver
 
 ## Stack
 
-The API is built in **.NET Core** and **C#**. **Nunit** and **Selenium** are used as part of the testing framework for unit and end-to-end tests. Hosted on Azure Web Services.
+The API is built using **.NET Core** and **C#**. **Nunit** and **Selenium** are used as part of the testing framework for unit and end-to-end tests. Hosted on Azure Web Services.
 
 ## Motivation
 
