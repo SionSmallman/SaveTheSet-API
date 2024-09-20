@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using sts_net.Tests.Selenium.PageObjects;
 using Microsoft.IdentityModel.Tokens;
+using NUnit.Framework;
 
 namespace sts_net.Tests.Selenium.Tests.Chrome
 {

@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Moq;
+using NUnit.Framework;
 using SpotifyAPI.Web;
 using sts_net.Data.Repositories.Interfaces;
 using sts_net.Middleware;

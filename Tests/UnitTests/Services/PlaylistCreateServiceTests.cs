@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using SpotifyAPI.Web;
 using sts_net.Helpers;
 using sts_net.Services;

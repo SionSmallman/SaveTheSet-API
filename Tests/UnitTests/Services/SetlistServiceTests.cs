@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Moq;
 using Moq.Protected;
+using NUnit.Framework;
 using sts_net.Services;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace sts_net.Tests.UnitTests.Services
             httpClientFactoryMock = new Mock<IHttpClientFactory>();
             setlistService = new SetlistService(configMock.Object, httpClientFactoryMock.Object);
             // The sample setlist used is here: https://www.setlist.fm/setlist/iron-maiden/2024/rac-arena-perth-australia-43ab83cb.html
-            var sampleSetlistFmApiResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net.Tests\\UnitTests\\Services\\SampleApiResponses\\SampleSetlistFmApiResponse.json");
+            var sampleSetlistFmApiResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net\\Tests\\UnitTests\\Services\\SampleApiResponses\\SampleSetlistFmApiResponse.json");
             sampleSetlistJsonObject = JsonSerializer.Deserialize<JsonObject>(sampleSetlistFmApiResponse);
 
         }
@@ -38,7 +39,7 @@ namespace sts_net.Tests.UnitTests.Services
             // Arrange
 
             // Mock the message handler to responsd with the sample SetlistFm API response
-            var sampleSetlistFmApiResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net.Tests\\UnitTests\\Services\\SampleApiResponses\\SampleSetlistFmApiResponse.json");
+            var sampleSetlistFmApiResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net\\Tests\\UnitTests\\Services\\SampleApiResponses\\SampleSetlistFmApiResponse.json");
             Mock<HttpMessageHandler> handlerMock = new Mock<HttpMessageHandler>();
             handlerMock
                 .Protected()

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Moq;
 using Moq.Protected;
+using NUnit.Framework;
 using sts_net.Models;
 using sts_net.Services;
 using sts_net.Services.Interfaces;
@@ -33,8 +34,8 @@ namespace sts_net.Tests.UnitTests.Services
             httpClientFactoryMock = new Mock<IHttpClientFactory>();
             service = new SpotifyClientCredentialsService(clientToken, httpClientFactoryMock.Object);
             // Data for sample responses: Artist - Holding Absence, Song - Gravity
-            searchForSongSampleResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net.Tests\\UnitTests\\Services\\SampleApiResponses\\SpotifyApiSearchForSongResponse.json");
-            searchForArtistSampleResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net.Tests\\UnitTests\\Services\\SampleApiResponses\\SpotifyApiSearchForArtistResponse.json");
+            searchForSongSampleResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net\\Tests\\UnitTests\\Services\\SampleApiResponses\\SpotifyApiSearchForSongResponse.json");
+            searchForArtistSampleResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net\\Tests\\UnitTests\\Services\\SampleApiResponses\\SpotifyApiSearchForArtistResponse.json");
         }
 
         [Test]

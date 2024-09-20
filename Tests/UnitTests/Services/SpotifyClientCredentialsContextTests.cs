@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Moq;
 using Moq.Protected;
+using NUnit.Framework;
 using sts_net.Models;
 using sts_net.Services;
 using sts_net.Services.Interfaces;
@@ -35,7 +36,7 @@ namespace sts_net.Tests.UnitTests.Services
 
             httpClientFactoryMock = new Mock<IHttpClientFactory>();
             spotifyClientCredentialsContext = new SpotifyClientCredentialsContext(config, httpClientFactoryMock.Object);
-            clientCredentialSampleResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net.Tests\\UnitTests\\Services\\SampleApiResponses\\SpotifyApiClientCredentialsResponse.json");
+            clientCredentialSampleResponse = File.ReadAllText("C:\\Users\\SionS\\source\\repos\\sts-net\\Tests\\UnitTests\\Services\\SampleApiResponses\\SpotifyApiClientCredentialsResponse.json");
         }
 
         [Test]

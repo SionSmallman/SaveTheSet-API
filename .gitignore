@@ -369,3 +369,5 @@ appsettings.json
 /sts-net.csproj
 /sts-net.csproj.user 
 /sts-net.sln
+/Tests/sts-net.Tests.csproj
+/Tests/sts-net.Tests.csproj
