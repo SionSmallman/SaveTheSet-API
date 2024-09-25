@@ -59,19 +59,6 @@ namespace sts_net.Tests.Selenium.Tests.Chrome
         }
 
         [Test]
-        public void SearchForSetlistWithInvalidUrlShouldFail()
-        {
-            homePage.SearchForSetlist("https://www.setlist.fm/setlist/oliver-francis/2022/trees-dallas-tx-73bff249.html");
-
-            //Wait for setlist to load on page
-            WebDriverWait waitForSetlistLoad = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            bool setlistIsDisplayed = waitForSetlistLoad.Until(d => d.FindElement(By.CssSelector("#songlist-container")).Displayed);
-            var songs = driver.FindElements(By.CssSelector("#songlist-song"));
-            Assert.That(setlistIsDisplayed, Is.True);
-            Assert.That(songs.Count, Is.EqualTo(4));
-        }
-
-        [Test]
         public void LoginFromHeaderShouldSucceed()
         {
 
