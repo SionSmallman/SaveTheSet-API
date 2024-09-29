@@ -70,5 +70,11 @@ namespace sts_net.Data.Repositories
 
             return playlists == null ? null : playlists.ToList();
         }
+
+        public async Task<List<Playlist>> GetUsersSavedPlaylists(string spotifyUserId)
+        {
+            var playlists = await _context.Savedplaylists.Where(x => x.Spotifyuserid == spotifyUserId).ToListAsync();
+            return playlists;
+        }
     }
 }

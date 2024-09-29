@@ -118,13 +118,13 @@ namespace sts_net.Controllers
             }
         }
 
-        [Route("api/playlists")]
+        [Route("api/playlists/{spotifyUserId}")]
         [HttpGet]
         [Authorize]
-        public IActionResult GetPlaylistsByUser([BindRequired] string id)
+        public async Task<IActionResult> GetPlaylistsByUser([BindRequired] string spotifyUserId)
         {
-
-            return Ok();
+            var playlists = await _playlistRepository.GetUsersSavedPlaylists(spotifyUserId);
+            return Ok(playlists);
         }
     }
 }
