@@ -19,16 +19,16 @@ namespace sts_net.Tests.Selenium.Tests.Chrome
         public void Setup()
         {
             // LOCAL DEV
-            //var options = new ChromeOptions
-            //{
-            //    AcceptInsecureCertificates = true,
-            //};
-            //driver = new ChromeDriver(options);
-            //homeUrl = "http://localhost:5173/";
+            var options = new ChromeOptions
+            {
+                AcceptInsecureCertificates = true,
+            };
+            driver = new ChromeDriver(options);
+            homeUrl = "http://localhost:5173/";
 
             // PROD
-            driver = new ChromeDriver();
-            homeUrl = "https://sts.sionsmallman.com/";
+            //driver = new ChromeDriver();
+            //homeUrl = "https://sts.sionsmallman.com/";
 
             driver.Url = homeUrl;
             driver.Manage().Window.Maximize();
@@ -113,6 +113,16 @@ namespace sts_net.Tests.Selenium.Tests.Chrome
             WebDriverWait waitForPlaylistSave = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             IWebElement openSpotifyButton = waitForPlaylistSave.Until(d => d.FindElement(By.CssSelector("#success-open-spotify")));
             openSpotifyButton.Click();
+        }
+
+        [Test]
+        public void UserHistoryIsVisible()
+        {
+            playlistPage.NavigateToHistory();
+
+            WebDriverWait waitForHistoryLoad = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            bool historyTableIsDisplayed = waitForHistoryLoad.Until(d => d.FindElement(By.CssSelector("#user-history-table")).Displayed);
+            Assert.That(historyTableIsDisplayed, Is.True);
         }
 
         [Test]

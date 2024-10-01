@@ -10,6 +10,6 @@ namespace sts_net.Data.Repositories.Interfaces
         Task<Playlist> UpdateAsync(Playlist playlist);
         Task<Playlist?> DeleteAsync(string id);
         List<RecentlySavedPlaylistDTO>? GetRecentPlaylists(int limit);
-        Task<List<Playlist>> GetUsersSavedPlaylists(string spotifyUserId);
+        Task<List<UserPlaylistHistoryDTO>> GetUsersSavedPlaylists(string spotifyUserId);
     }
 }

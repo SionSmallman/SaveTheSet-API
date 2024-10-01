@@ -18,6 +18,7 @@ namespace sts_net.Tests.Selenium.PageObjects
         private By headerDisplayNameBy = By.CssSelector("#spotify-profile-displayname");
         private By userDropdownBy = By.CssSelector("#user-dropdown");
         private By userSettingsBy = By.CssSelector("#user-settings");
+        private By userHistoryBy = By.CssSelector("#user-history");
         private By logoutButtonBy = By.CssSelector("#logout");
 
        public Page(IWebDriver driver)
@@ -68,6 +69,15 @@ namespace sts_net.Tests.Selenium.PageObjects
 
             IWebElement userSettings = _driver.FindElement(userSettingsBy);
             userSettings.Click();
+        }
+
+        public virtual void NavigateToHistory()
+        {
+            IWebElement userDropdownMenu = _driver.FindElement(userDropdownBy);
+            userDropdownMenu.Click();
+
+            IWebElement userHistory = _driver.FindElement(userHistoryBy);
+            userHistory.Click();
         }
 
         public virtual void Logout()
