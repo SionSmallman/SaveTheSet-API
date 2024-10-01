@@ -70,5 +70,19 @@ namespace sts_net.Data.Repositories
 
             return playlists == null ? null : playlists.ToList();
         }
+
+        public async Task<List<UserPlaylistHistoryDTO>> GetUsersSavedPlaylists(string spotifyUserId)
+        {
+            var playlists = await _context.Savedplaylists.Where(x => x.Spotifyuserid == spotifyUserId).Select(x => new UserPlaylistHistoryDTO
+            {
+                ArtistName = x.Artistname,
+                Date = x.Date,
+                Venue = x.Venue,
+                City = x.City,
+                SpotifyPlaylistUrl = x.Spotifyplaylistlink,
+                PlaylistCreationDate = x.CreatedAt.ToShortDateString(),
+            }).ToListAsync();
+            return playlists;
+        }
     }
 }
